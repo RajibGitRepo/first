@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional Operator (ternary operator)</title>
+</head>
+<body>
+        <script>
+            const age = 19;
+            // conditional statement 
+            age>=18 ? console.log("You have your privilage to Drink Wine 🍷") :console.log("You should drink Milk");
+            
+            // ex 
+
+            let drink = age>=18 ? "Wine🍷": "Milk🍼";
+            console.log(drink)
+
+                // if i try to do wiht if else then 
+                let drink2 ;
+                if(age>= 18){
+                    drink2 = "Wine🍷"
+                }
+                    else{
+                    drink2 =  "Milk🍼"   
+                }
+
+
+                console.log(drink2)
+
+                let name = "Rajib";
+                let fullName = name.length >=5 ? name+" Debnath": "Sharmila Debnath";
+                console.log(fullName)
+
+                console.log(`i want to drink ${age>=18 ? 'Wine🍷':'Milk🍼'}`)
+
+
+                // coding Challange 
+                // console.log(15<=20 && 13>14 ? "Rajib is a Good boy":"Rajib is a bad boy");
+             const billValue = 40;
+
+                const tip = billValue >=50 && billValue <=300? + billValue/100*15: billValue/100*20;
+                console.log(`Rajib's Hotel bill is ${billValue} and his given tip is ${tip} and togerther bill is ${billValue + tip}`)
+        </script>
+</body>
+</html>

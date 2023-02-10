@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi Calculator</title>
+</head>
+<body>
+    <script>
+        let getMass= prompt("give your weight")
+        let getHeight= prompt("give your height")
+        let jhone = {
+            mass:getMass,
+            height:getHeight
+        }
+
+        
+        let marks = {
+            sMass:78,
+            sHeight:1.69
+        }
+        const {mass,height}=jhone;
+        const {sMass,sHeight}= marks;
+
+        let marksBmi = sMass / Math.round( Math.pow(sHeight,2));
+        console.log(`marks ${marksBmi}`)
+        
+ 
+        function getBmi(mass,height){
+            let bmi = mass / height ** 2;
+            console.log(`jhone ${Math.floor(bmi)}`);
+         
+
+            if(bmi < marksBmi){
+                console.log(`Marks Bmi is Higher then jhon`)
+            } 
+            else{
+                console.log(`jhone Bmi is Higher then marks`)
+            }
+            return ;
+        }
+
+        getBmi(mass,height);
+        
+    
+     
+
+    </script>
+</body>
+</html>

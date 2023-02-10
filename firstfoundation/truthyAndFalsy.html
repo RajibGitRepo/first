@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthi and falsy \\ equality Oparator</title>
+</head>
+<body>
+    
+    <script>
+        // falsy values = 0," "(empty string ),undefined,null,NaN;
+
+        // console.log(Boolean(0))
+        // console.log(Boolean(" "))
+        // console.log(Boolean(undefined))
+        // console.log(Boolean(NaN))
+        // console.log(Boolean(null))
+        // everything gonna be falsy value 
+        // using of true and false value 
+
+        // let money = 100;
+        // // 0 == false
+        // if(money){
+        //     console.log("Don't spend at all !");
+        // }else{
+        //     console.log("you Should get a job")
+        // }
+
+        // let getJob ;
+
+        // if (getJob){
+        //     console.log("Hello World");
+        // }
+        // else{
+        //     console.log("Hello Rajib this is undefined")
+        // }
+
+
+
+// Oparator 
+
+// let age = 18;
+
+// if(age===18)console.log("you just became an adult ! ")
+
+// prompt 
+// let prompts =Number (prompt("Hello Rajib"))
+
+
+
+// if(prompts === 23)console.log("cool! 23 is amazing")
+
+
+// if(prompts !== 23)console.log("This is rediculous")
+
+
+// boolean logic
+
+
+const hasDriverLicense = true;
+const hasGoodVision = true;
+const isTiered = false;
+
+// And operator &&
+console.log(hasDriverLicense && hasGoodVision)
+// or operator ||
+// if any one is true between this two values 
+console.log(hasDriverLicense || hasGoodVision)
+
+
+
+
+// if 2 value are true then this statement will print should drive and if not then it will show should not drive 
+
+// if(hasDriverLicense && hasGoodVision){
+//     console.log("sarah should drive ")
+// }
+// else{
+//     console.log("sarah shouldn't Drive")
+// }
+if(hasDriverLicense && hasGoodVision && !isTiered){
+    console.log("sarah should drive ")
+}
+else{
+    console.log("sarah shouldn't Drive")
+}
+
+
+    let isGood = true;
+    let isWrite = true;
+    let isMarket = false;
+
+    if(isGood && isWrite && !isMarket){console.log("He should Admit")}
+    else{console.log("hE should learn some genaral behaviour")}
+
+
+    </script>
+</body>
+</html>

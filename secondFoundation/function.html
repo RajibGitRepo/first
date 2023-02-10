@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function Tutorial</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        // function declearation
+        function  appleJusice(apple,orange){
+            console.log(apple,orange)
+            const jit = `for apple juice we need ${apple} apples and ${orange}orange. Orange is not essential for apple juice`;
+            return jit;
+        }
+        let juice = appleJusice(54,0)
+        console.log(juice)
+
+        // function expression
+        // (birthYear) it's called parameter 
+        let getAge = function (birthYear){
+            return birthYear - 2003  ;
+        }
+        let date = new Date().getFullYear();
+        // getAge(date) it's called argument
+        console.log(getAge(date))
+        // here i could use  arrow function but for making this explicitely  understandable for all beggainer to advenace lavel coder i have wrote this function simple
+
+
+
+        // Arrow function 
+
+        let getSubstract  = (value)=> 20 - value;
+        console.log(getSubstract(10))
+
+        // if i have more then 1 line in return section then i have to use {} bresses 
+
+            function getMagic(how,mow){
+
+               console.log( getData(how,mow)+ " get DAta")
+                return how + mow;
+            }
+
+            console.log(getMagic(25,36));
+
+            function getData(get,post){
+                
+                    let gets = (get + post) * 2 ;
+                return gets
+
+            }
+          
+            function fruits(frui){
+                return 4*frui
+            }
+
+            function getJuice(apples,orange){
+
+              let apple =   fruits(apples);
+              let oranges = fruits(orange);
+
+              const getAll =   ` here is ${apple} apple and ${oranges} oranges`
+
+              return getAll;
+                
+            }
+            console.log(getJuice(2,3))
+
+
+
+// reviewing 
+
+           function first(birthYear){
+                return 2023 - birthYear;
+            }
+
+            function second(fistName,birthYear){
+                let age = first(birthYear);
+                let retirement = 65 - age;
+
+                if(retirement > 0){
+                    console.log(` he has ${retirement} years ramining to be retired`)
+                    return retirement;
+                }
+                else{
+                    let hasRetired = ` he is allready retired`;
+                    return hasRetired;
+                }
+            }
+            let values = second("Rajib",2003);
+            console.log(values)
+
+
+    </script>
+</body>
+</html>

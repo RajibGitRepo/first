@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement </title>
+</head>
+<body>
+    <script>
+        let getDay = prompt("Write the day");
+
+        switch (getDay) {
+            case "monday":
+                console.log("I Write Code")
+                console.log("I practice English")
+                break;
+            case "tuesday":
+                console.log("Make Project and do Practice")
+                break;
+            case "wednesday":
+            case "thursday":
+            console.log("Go for Walk");
+                break;
+            default:
+                console.log("I do enjoy my weekend");
+                break;
+        }
+
+        if (getDay === "monday"){
+            console.log("I Write Code")
+                console.log("I practice English")
+        }
+        else if(getDay === "tuesday"){
+            console.log("Make Project and do Practice")
+        }
+        else if (getDay === "wednesday" || getDay ==="thursday"){
+            console.log("Go for Walk");
+        }
+        else{
+            console.log("I do enjoy my weekend");
+        }
+    </script>
+</body>
+</html>

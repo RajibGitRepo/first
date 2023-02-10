@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion and coercion</title>
+</head>
+<body>
+    
+    <script>
+        let getString = "2003";
+        console.log(getString)
+        // make number formate 
+        let convertNum = Number(getString);
+        console.log(convertNum)
+        let againString = "Rajib";
+
+        // Nan!
+        // it will show nan because string can't be convert into numbert therefor it will show nan 
+        console.log(Number(againString))
+// if number is string here then + sign not gonna convert those stirng into number 
+console.log("20"+"60"+6);
+
+// but here exsept plus(+) all operater gonna convert all stirng into number if string's are in number oredre
+// other hand you can say that plus convert number into string 
+// console.log("20"*"8") = 160
+console.log("20"*"8")
+console.log("20"-"8")
+console.log("20"/"8")
+
+    </script>
+</body>
+</html>

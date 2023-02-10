@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challange 3</title>
+</head>
+<body style="background:linear-gradient(rgba(255, 181, 132, 0.863),rgb(247, 0, 152))">
+    
+    <script>
+        // const Dolphins = (96+108+89)/3;
+        // const koalas = (88 + 91 + 110)/3;
+        const bDolphines = Math.round((97+112+101)/3);
+        const bkoalas = Math.round((109+95+123)/3);
+        console.log(bDolphines,bkoalas)
+
+        if(bDolphines > bkoalas && bDolphines >=100  ){
+            console.log ("Winner Dolphines 🐬🏆")
+        }
+        else if(bDolphines === bkoalas && bDolphines >=100 && bkoalas >= 100){
+            console.log("Draw")
+        }
+        else if(bDolphines < bkoalas &&  bkoalas >= 100){
+            console.log ("Winner koalas 🐨🏆")
+        }
+        else{
+            console.log("No one own ❌")
+        }
+      
+      
+      
+      
+        // if(Dolphins > koalas){
+        //     console.log("Winner Dolphines 🏆")
+        // }
+        // else if(Dolphins ===  koalas){
+        //     console.log("Draw ")
+        // }
+        // else if(Dolphins < koalas){
+        //     console.log("Winner koalas 🏆")
+        // }
+      
+    </script>
+</body>
+</html>
